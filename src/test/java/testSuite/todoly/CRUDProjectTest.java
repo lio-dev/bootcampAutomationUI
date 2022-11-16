@@ -13,11 +13,11 @@ public class CRUDProjectTest extends TestBase{
         String projectCreated="MOJIX"+new Date().getTime();
         String projectUpdated="QA"+new Date().getTime();
 
-        mainPage.loginLabel.click();
+
         loginSection.emailTxtBox.setText(user);
         loginSection.passwordTxtBox.setText(password);
         loginSection.loginButton.click();
-        Assertions.assertTrue(menuSection.logoutButton.isControlDisplayed(),"ERROR! the login was faield");
+
 
         projectSection.addNewProjecButton.click();
         projectSection.nameProjectTxtBox.setText(projectCreated);

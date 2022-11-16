@@ -7,14 +7,10 @@ import session.Session;
 import util.GetProperties;
 
 public class TestBase {
-     MainPage mainPage= new MainPage();
+
      LoginSection loginSection = new LoginSection();
-     MenuSection menuSection = new MenuSection();
      ProjectSection projectSection= new ProjectSection();
 
-     SettingsSection settingsSection = new SettingsSection();
-
-     SignUpSection signUpSection= new SignUpSection();
      // todo property file
      String user=GetProperties.getInstance().getUser();
      String password =GetProperties.getInstance().getPwd();
